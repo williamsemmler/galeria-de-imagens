@@ -1,0 +1,155 @@
+:root {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, rgb(0, 34, 1), rgb(14, 34, 0));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    height: fit-content;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.35rem;
+    background: linear-gradient(to bottom, rgb(0, 97, 3), rgb(0, 34, 1));
+}
+
+.navbar {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px 0;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar input[type="search"] {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    padding: 5px
+}
+
+.navbar button {
+    width: 100px;
+    height: 30px;
+    font-size: 0.9rem;
+    color: white;
+    line-height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 135, 188);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.navbar button:hover {
+    background-color: rgb(1, 89, 124);
+    transition: all 0.5s;
+}
+
+.navbar label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar select {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+main {
+    width: 100%;
+    padding: 50px 0;
+}
+
+main .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cardImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.cardImg:hover {
+    transform: scale(105%);
+    transition: all 0.5s;
+}
+
+.cardImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.containerBackgroundImg {
+    background-color: rgba(0, 0, 0, 0.741);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+}
+
+.largeImg {
+    width: 900px;
+    height: 600px;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.backgroundAplication {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.buttonClose {
+    font-size: 50px;
+    color: white;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+    cursor: pointer;
+}
