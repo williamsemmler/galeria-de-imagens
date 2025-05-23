@@ -11,8 +11,8 @@ select.addEventListener('click', () => {
     buscarImagens(selectValue);
 });
 
-async function buscarImagens(caterogy) {
-    const linkApi = `https://pixabay.com/api/?key=${apiUser}&q=${encodeURIComponent(caterogy)}&${encodeURIComponent(imgType)}`;
+async function buscarImagens(category) {
+    const linkApi = `https://pixabay.com/api/?key=${apiUser}&q=${encodeURIComponent(category)}&${encodeURIComponent(imgType)}`;
     
     try {
         const response = await fetch(linkApi);
@@ -21,7 +21,7 @@ async function buscarImagens(caterogy) {
         const imgsLink = data.hits.map( imagem => imagem.webformatURL)
 
         imgsLink.forEach(link => {
-            container.appendChild(iterarLinks(link))
+            container.appendChild(criarCardImagem(link))
         });
 
     } catch(error) {
@@ -30,7 +30,7 @@ async function buscarImagens(caterogy) {
     }
 }
 
-function iterarLinks (link) {
+function criarCardImagem (link) {
     const div = document.createElement('div');
     const img = document.createElement('img');
     img.setAttribute('src', link);
