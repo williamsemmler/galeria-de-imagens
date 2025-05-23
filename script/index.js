@@ -1,4 +1,4 @@
-const apiUser = '15026491-72ae33916ee3ad02a9a7bc84b';
+const apiUser = '[sua_API]'
 const filtersCategory = ['nature', 'places', 'animals', 'travel', 'backgrounds'];
 const imgType = 'photo'
 
